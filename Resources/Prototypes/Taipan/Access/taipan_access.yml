@@ -1,0 +1,78 @@
+- type: accessGroup
+  id: TaipanAccess
+  tags:
+  - TaipanArmory
+  - TaipanAtmospherics
+  - TaipanBasic
+  - TaipanCargo
+  - TaipanCommand
+  - TaipanCommunicationsOfficer
+  - TaipanEngineering
+  - TaipanMaint
+  - TaipanMedical
+  - TaipanProtection
+  - TaipanResearchDirector
+  - TaipanScience
+  - TaipanService
+  - TaipanTechnicalOperationsSupervisor
+  - TaipanVault
+
+- type: accessLevel
+  id: TaipanArmory
+  name: арсенал Тайпан
+  
+- type: accessLevel
+  id: TaipanAtmospherics
+  name: атмосферный Тайпан
+
+- type: accessLevel
+  id: TaipanBasic
+  name: Тайпан
+
+- type: accessLevel
+  id: TaipanCargo
+  name: снабжение Тайпан
+
+- type: accessLevel
+  id: TaipanCommand
+  name: командный Тайпан
+
+- type: accessLevel
+  id: TaipanCommunicationsOfficer
+  name: кабинет ОТК Тайпан
+
+- type: accessLevel
+  id: TaipanEngineering
+  name: инженерный Тайпан
+
+- type: accessLevel
+  id: TaipanMaint
+  name: технический Тайпан
+
+- type: accessLevel
+  id: TaipanMedical
+  name: медицинский Тайпан
+
+- type: accessLevel
+  id: TaipanProtection
+  name: охрана Тайпан
+
+- type: accessLevel
+  id: TaipanResearchDirector
+  name: кабинет ДИ Тайпан
+
+- type: accessLevel
+  id: TaipanScience
+  name: научный Тайпан
+
+- type: accessLevel
+  id: TaipanService
+  name: сервисный Тайпан
+
+- type: accessLevel
+  id: TaipanTechnicalOperationsSupervisor
+  name: кабинет РТ Тайпан
+
+- type: accessLevel
+  id: TaipanVault
+  name: хранилище Тайпан

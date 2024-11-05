@@ -1,0 +1,50 @@
+- type: radioChannel
+  id: RadioTaipan
+  name: Тайпан
+  keycode: 'э'
+  frequency: 1460
+  color: "#87181c"
+  longRange: true
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyTaipan
+  name: ключ шифрования Тайпана
+  description: Ключ шифрования, используемый гордыми змееносцами!
+  components:
+  - type: EncryptionKey
+    channels:
+    - RadioTaipan
+    defaultChannel: RadioTaipan
+  - type: Sprite
+    layers:
+    - state: crypt_red
+    - state: common_label
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetTaipan
+  name: гарнитура Тайпана
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyTaipan
+  - type: Sprite
+    sprite: Taipan/Clothing/Ears/Headsets/hs_base_taipan.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Ears/Headsets/hs_base_taipan.rsi
+
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltTaipan
+  name: полноразмерная гарнитура Тайпана
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyTaipan
+  - type: Sprite
+    sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi

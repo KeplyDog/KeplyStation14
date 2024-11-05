@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 8,
+    "y": 8
+  },
+  "states": [
+    {
+      "name": "CommunicationOfficer"
+    },
+    {
+      "name": "Doctor"
+    },
+    {
+      "name": "MindEnslavement"
+    },
+    {
+      "name": "Paramedic"
+    },
+    {
+      "name": "Recruit"
+    },
+    {
+      "name": "ResearchDirector"
+    },
+    {
+      "name": "TechnicalSupervisor"
+    },
+    {
+      "name": "Scientist"
+    },
+    {
+      "name": "Miner"
+    },
+    {
+      "name": "Engineer"
+    },
+    {
+      "name": "AtmosphericEngineer"
+    },
+    {
+      "name": "Borg"
+    },
+    {
+      "name": "Botanist"
+    },
+    {
+      "name": "CargoTechnician"
+    },
+    {
+      "name": "Chef"
+    },
+    {
+      "name": "Chemist"
+    },
+    {
+      "name": "ChiefEngineer"
+    }
+  ]
+}

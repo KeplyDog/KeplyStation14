@@ -1,0 +1,257 @@
+- type: entity
+  parent: Clothing
+  id: IDCardTaipan
+  name: ID карта сотрудника Тайпана
+  description: Карта для доступа в отделы ННКСС Тайпан
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Taipan/Objects/Devices/idcards.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: StealTarget
+    stealGroup: IDCard
+
+# ID карты Тайпана
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanAtmosphericsEngineerIDcard
+  name: ID карта атмосферного инженера Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: atmosphericsengineer
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanAtmospherics
+    - TaipanEngineering
+    - TaipanMaint
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanBotanistIDcard
+  name: ID карта ботаника Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: botanist
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanService
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanResearchDirectorIDcard
+  name: ID карта директора исследований Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: researchdirector
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanAtmospherics
+    - TaipanCargo
+    - TaipanCommand
+    - TaipanEngineering
+    - TaipanMaint
+    - TaipanMedical
+    - TaipanResearchDirector
+    - TaipanScience
+    - TaipanService
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanCargotechIDcard
+  name: ID карта карготехника Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: shaftminer
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanCargo
+    - TaipanMaint
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanMedicalDoctorIDcard
+  name: ID карта медика Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: medicaldoctor
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanMedical
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanCommunicationsOfficerIDcard
+  name: ID карта офицера телекоммуникаций Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: headofsecurity
+  - type: Access
+    tags:
+    - TaipanArmory
+    - TaipanAtmospherics
+    - TaipanBasic
+    - TaipanCargo
+    - TaipanCommand
+    - TaipanCommunicationsOfficer
+    - TaipanEngineering
+    - TaipanMaint
+    - TaipanMedical
+    - TaipanProtection
+    - TaipanResearchDirector
+    - TaipanScience
+    - TaipanService
+    - TaipanTechnicalOperationsSupervisor
+    # - TaipanVault
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanParamedicIDcard
+  name: ID карта парамедика Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: paramedic
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanMaint
+    - TaipanMedical
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanChefIDcard
+  name: ID карта повара Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: cook
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanService
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanRecruitIDcard
+  name: ID карта рекрута Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: pilot
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanProtection
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanEngineerIDcard
+  name: ID карта ремонтника Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: stationengineer
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanEngineering
+    - TaipanMaint
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanTechnicalOperationsSupervisorIDcard
+  name: ID карта руководителя техобеспечения Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: roboticist
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanAtmospherics
+    - TaipanCargo
+    - TaipanCommand
+    - TaipanEngineering
+    - TaipanMaint
+    - TaipanMedical
+    - TaipanResearchDirector
+    - TaipanScience
+    - TaipanService
+
+- type: entity
+  parent: IDCardTaipan
+  id: TaipanScientistIDcard
+  name: ID карта учёного Тайпана
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    layers:
+    - state: chemist
+  - type: Access
+    tags:
+    - TaipanBasic
+    - TaipanMaint
+    - TaipanScience
+    
+- type: entity
+  parent: EmagUnlimited
+  id: EmagTaipanUnlimited
+  suffix: Тайпан, ЕМАГ, Неограниченный
+  name: криптографический секвенсор
+  description: Универсальное устройство для взлома. Специализированная версия для руководства ННКСС Тайпан
+  components:
+  - type: Sprite
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    state: emag
+  - type: Item
+    sprite: Taipan/Objects/Devices/idcards.rsi
+    storedRotation: -90
+  
+- type: entity
+  parent: EmagTaipanUnlimited
+  id: EmagTaipan
+  suffix: Тайпан, ЕМАГ, Ограниченный
+  components:
+  - type: LimitedCharges
+    maxCharges: 1
+  - type: AutoRecharge
+  - type: AccessReader
+    access: [["TaipanResearchDirector"]]
+  - type: Lock
+    unlockOnClick: false

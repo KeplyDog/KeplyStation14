@@ -1,0 +1,205 @@
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanService
+  suffix: Сервисный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_service.rsi
+  - type: PaintableAirlock
+    department: Сервисный
+  - type: Wires
+    layoutId: AirlockService
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanFreezer
+  suffix: Холодильник
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_freezer.rsi
+  - type: Wires
+    layoutId: AirlockService
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanEngineering
+  suffix: Инженерный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_engineering.rsi
+  - type: PaintableAirlock
+    department: Инженерный
+  - type: Wires
+    layoutId: AirlockEngineering
+
+- type: entity
+  parent: AirlockTaipanEngineering
+  id: AirlockTaipanAtmospherics
+  suffix: Атмосферный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_atmospherics.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanCargo
+  suffix: Снабжение
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_cargo.rsi
+  - type: PaintableAirlock
+    department: Снабжение
+  - type: Wires
+    layoutId: AirlockCargo
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanMaint
+  name: Технический
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_maint.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanMedical
+  suffix: Медицинский
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_medical.rsi
+  - type: PaintableAirlock
+    department: Медицинский
+  - type: Wires
+    layoutId: AirlockMedical
+
+- type: entity
+  parent: AirlockTaipanMedical
+  id: AirlockTaipanVirology
+  suffix: Вирусология
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_virology.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanScience
+  suffix: Научный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_science.rsi
+  - type: PaintableAirlock
+    department: Научный
+  - type: Wires
+    layoutId: AirlockScience
+
+- type: entity
+  parent: Airlock
+  id: AirlockTaipanCommand
+  suffix: Командный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_command.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: PaintableAirlock
+    department: Командный
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassService
+  suffix: Стеклянный, Сервисный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_service.rsi
+  - type: PaintableAirlock
+    department: Сервисный
+  - type: Wires
+    layoutId: AirlockService
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassEngineering
+  suffix: Инженерный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_engineering.rsi
+  - type: PaintableAirlock
+    department: Инженерный
+  - type: Wires
+    layoutId: AirlockEngineering
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassMaint
+  suffix: Технический
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_maint.rsi
+
+- type: entity
+  parent: AirlockTaipanGlassEngineering
+  id: AirlockTaipanGlassAtmospherics
+  suffix: Атмосферный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_atmospherics.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassCargo
+  suffix: Снабжение
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_cargo.rsi
+  - type: PaintableAirlock
+    department: Снабжение
+  - type: Wires
+    layoutId: AirlockCargo
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassMedical
+  suffix: Медицинский
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_medical.rsi
+  - type: PaintableAirlock
+    department: Медицинский
+  - type: Wires
+    layoutId: AirlockMedical
+
+- type: entity
+  parent: AirlockTaipanGlassMedical
+  id: AirlockTaipanGlassVirology
+  suffix: Вирусология
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_virology.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassScience
+  suffix: Научный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_science.rsi
+  - type: PaintableAirlock
+    department: Научный
+  - type: Wires
+    layoutId: AirlockScience
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTaipanGlassCommand
+  suffix: Командный
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Airlocks/taipan_glass_command.rsi
+  - type: PaintableAirlock
+    department: Командный
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
